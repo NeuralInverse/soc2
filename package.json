@@ -1,0 +1,53 @@
+{
+  "name": "@neuralinverse/soc2",
+  "version": "0.0.1",
+  "description": "SOC 2 Trust Services Criteria rules for NeuralInverse static analysis engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "soc2",
+    "compliance",
+    "static-analysis",
+    "security",
+    "neuralinverse"
+  ],
+  "author": "Neural Inverse Inc. <legal@neuralinverse.com>",
+  "license": "BUSL-1.1",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeuralInverse/soc2.git"
+  },
+  "homepage": "https://neuralinverse.com",
+  "bugs": {
+    "url": "https://github.com/NeuralInverse/soc2/issues",
+    "email": "support@neuralinverse.com"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}

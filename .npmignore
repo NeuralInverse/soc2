@@ -1,0 +1,6 @@
+src/
+tsconfig.json
+CONTRIBUTING.md
+SECURITY.md
+*.tgz
+node_modules/
