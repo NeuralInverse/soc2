@@ -1,6 +1,6 @@
 {
   "name": "@neuralinverse/soc2",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "SOC 2 Trust Services Criteria rules for NeuralInverse static analysis engine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,12 +14,12 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "dist/bundle.umd.js"
   ],
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "soc2",
@@ -47,7 +47,8 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.4.0"
   }
 }
